@@ -97,12 +97,13 @@
   // Scrolly.
   $('.scrolly').scrolly();
 
-  const vid = document.getElementById('video');
+  //syntax from w3 schools: https://www.w3schools.com/tags/av_met_play.asp
+  // const vid = document.getElementById('video');
 
-  function autoPlay() {
-    vid.play();
-  }
-  autoPlay();
+  // function autoPlay() {
+  //   vid.play();
+  // }
+  // autoPlay();
 
   // Header (narrower + mobile).
 
@@ -166,3 +167,12 @@
   //   });
 
 })(jQuery);
+
+$(window).on('load', () => {
+  const vid = document.getElementById('video');
+
+  function autoPlay() {
+    vid.play();
+  }
+  autoPlay();
+})
