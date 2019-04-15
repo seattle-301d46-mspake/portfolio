@@ -1563,6 +1563,26 @@ button,
 }
 
 
+/* syntax for background video found here: https://pawelgrzybek.com/background-video-made-easy/ */
+
+#video-div {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+
 /* Wide */
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -1667,6 +1687,30 @@ button,
     }
     /* Header */
     #header {
+        position: fixed;
+        z-index: 1000000;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+    #logo,
+    .bottom {
+        display: none;
+    }
+    nav ul {
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        width: 20%;
+    }
+    #nav ul li a span:before {
+        position: relative;
+        width: 1.25em;
+    }
+    /* 
+    #header {
         display: block;
         height: 100%;
         left: 0;
@@ -1688,9 +1732,7 @@ button,
     #logo {
         margin: 1.5em 1.25em 1.25em 1.25em;
     }
-    #nav ul li a {
-        padding: 0.5em 1.25em 0.5em 1.25em;
-    }
+
     #headerToggle {
         display: block;
         height: 2.25em;
@@ -1707,14 +1749,8 @@ button,
         width: 100%;
         height: 100%;
     }
-    #headerToggle .toggle:before {
-        position: absolute;
-        left: 0.5em;
-        top: 0.5em;
-        display: block;
-        width: 3.25em;
-        height: 2.25em;
-    }
+
+     */
     /* Footer */
     #footer {
         margin-left: 0;
