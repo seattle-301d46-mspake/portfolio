@@ -467,8 +467,12 @@ button:active,
     background-color: #2a58287a;
 }
 
-div>#banner {
-    background-color: #22272980;
+#banner header {
+    text-shadow: 0 0 5px black;
+    /* width: 50%;
+    margin: auto;
+    border-radius: 0.35em;
+    background-color: #222729b6; */
 }
 
 

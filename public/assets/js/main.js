@@ -97,6 +97,17 @@
   // Scrolly.
   $('.scrolly').scrolly();
 
+  //syntax for slideshow found on w3 schools: https://www.w3schools.com/w3css/w3css_slideshow.asp
+  var index = 1;
+
+  function imageRotate() {
+    $('#main>section.one').css('background-image', `url("../../images/trees${index}.jpg")`);
+    index++;
+    if (index > 4) { index = 1 }
+    setTimeout(imageRotate, 2000); // Change image every 2 seconds
+  }
+
+  imageRotate();
 
   // Header (narrower + mobile).
   const navText = [];
