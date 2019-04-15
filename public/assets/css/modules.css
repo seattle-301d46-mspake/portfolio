@@ -420,8 +420,7 @@ button:active,
 }
 
 #main>section.dark {
-    color: #ddd;
-    color: rgba(255, 255, 255, 0.75);
+    color: whitesmoke;
 }
 
 #main>section.dark h2,
