@@ -451,8 +451,8 @@ button:active,
 }
 
 #main>section.one {
-    background-color: #2a58289f;
-    background-image: url("../../images/trees-darker.jpg");
+    background-color: transparent;
+    /* background-image: url("../../images/trees-darker.jpg"); */
 }
 
 #main>section.two {
