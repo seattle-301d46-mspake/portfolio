@@ -110,6 +110,8 @@
   imageRotate();
 
   // Header (narrower + mobile).
+
+  //syntax for breakpoint event handling from brakpoints documentation: https://www.npmjs.com/package/breakpoints-js
   const navText = [];
   $('#nav span').each(function() {
     navText.push($(this).text());
