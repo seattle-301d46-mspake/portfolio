@@ -97,12 +97,22 @@
   // Scrolly.
   $('.scrolly').scrolly();
 
+
   // Header (narrower + mobile).
   const navText = [];
-  breakpoints.on('narrower', function() {
-    $('#nav span').each(function() {
-      navText.push($(this).text());
-      $(this).text('');
+  $('#nav span').each(function() {
+    navText.push($(this).text());
+  });
+
+  breakpoints.on('wide', function() {
+    $('#nav span').each(function(i) {
+      $(this).text(navText[i]);
+    });
+  });
+
+  breakpoints.on('normal', function() {
+    $('#nav span').each(function(i) {
+      $(this).text(navText[i]);
     });
   });
 
@@ -112,6 +122,17 @@
     });
   });
 
+  breakpoints.on('narrower', function() {
+    $('#nav span').each(function() {
+      $(this).text('');
+    });
+  });
+
+  breakpoints.on('mobile', function() {
+    $('#nav span').each(function() {
+      $(this).text('');
+    });
+  });
 
   // Toggle.
   // $(
