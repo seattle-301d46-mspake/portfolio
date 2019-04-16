@@ -168,7 +168,7 @@
 
 })(jQuery);
 
-$(window).on('load', () => {
+$('#video').on('load', () => {
   const vid = document.getElementById('video');
 
   function autoPlay() {
